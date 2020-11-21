@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/cloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ic_cloud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.garage.view.WriterTextView
+        android:id="@+id/tvAgeDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/imaginery"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/cloud"
+        app:layout_constraintEnd_toEndOf="@id/cloud"
+        app:layout_constraintStart_toStartOf="@id/cloud"
+        app:layout_constraintTop_toTopOf="@id/cloud"
+        app:layout_constraintVertical_bias="0.35"
+        tools:text="@string/age_desc" />
+
+    <ImageView
+        android:id="@+id/imgRedMan"
+        android:layout_width="190dp"
+        android:layout_height="224dp"
+        android:src="@drawable/ic_red_man"
+        app:layout_constraintBottom_toBottomOf="@id/picture"
+        app:layout_constraintEnd_toStartOf="@id/picture"
+        app:layout_constraintStart_toStartOf="@id/picture" />
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="163dp"
+        android:layout_height="153dp"
+        android:src="@drawable/ic_picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/imaginery"
+        android:text="1"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/picture"
+        app:layout_constraintEnd_toEndOf="@id/picture"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@id/picture"
+        app:layout_constraintTop_toTopOf="@id/picture"
+        tools:text="7" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:progressDrawable="@drawable/bg_seeknbar"
+        android:rotation="270"
+        android:splitTrack="false"
+        android:thumb="@drawable/ic_seekbar"
+        android:thumbOffset="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guide1"
+        app:layout_constraintStart_toStartOf="@id/guide1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

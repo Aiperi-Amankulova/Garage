@@ -4,4 +4,6 @@
     <string name="omboad_second_page">Привет!\nДавай знакомиться! \nкак тебя зовут?</string>
     <string name="my_name">Меня зовут</string>
     <string name="masha">Маша</string>
+
+    <string name="age_desc">Сколько тебе лет?</string>
 </resources>
