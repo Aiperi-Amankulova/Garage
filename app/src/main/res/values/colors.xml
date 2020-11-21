@@ -10,4 +10,5 @@
 
     <color name="grey_dark">#303030</color>
     <color name="yellow_et">#EDC65B</color>
+    <color name="background_progress">#EEE7DF</color>
 </resources>
