@@ -7,7 +7,7 @@ import android.view.animation.ScaleAnimation
 
 object AnimationUtils {
 
-    private const val DURATION = 80L
+    private const val INITIAL = 80L
 
     fun animatePress(view: View) {
         val objectAnimation = ScaleAnimation(
@@ -20,7 +20,7 @@ object AnimationUtils {
             Animation.RELATIVE_TO_SELF,
             0.5f
         )
-        objectAnimation.duration = DURATION
+        objectAnimation.duration = INITIAL
         objectAnimation.interpolator = LinearInterpolator()
         objectAnimation.fillAfter = true
         view.startAnimation(objectAnimation)
@@ -37,7 +37,7 @@ object AnimationUtils {
             Animation.RELATIVE_TO_SELF,
             0.5f
         )
-        objectAnimation.duration = DURATION
+        objectAnimation.duration = INITIAL
         objectAnimation.interpolator = LinearInterpolator()
         objectAnimation.fillAfter = true
         view.startAnimation(objectAnimation)
