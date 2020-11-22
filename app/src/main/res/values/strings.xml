@@ -6,4 +6,11 @@
     <string name="masha">Маша</string>
 
     <string name="age_desc">Сколько тебе лет?</string>
+
+    <string name="baby">Малыш, ты уже умеешь\n читать?</string>
+    <string name="teenager">Сколько тебе лет?</string>
+    <string name="adult">Ого! А ты не слишком\n взрослый?</string>
+
+    <string name="age_16">16+</string>
+    <string name="age_one">1</string>
 </resources>
